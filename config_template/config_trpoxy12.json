@@ -1,7 +1,7 @@
 {
  "dns": {
     "servers": [
-      { "tag": "local", "type": "udp", "server": "10.0.0.4" },
+      { "tag": "local", "type": "udp", "server": "119.29.29.29" },
       { "tag": "public", "type": "https", "server": "dns.alidns.com", "domain_resolver": "local" },
       { "tag": "foreign", "type": "https", "server": "1.1.1.1",  "detour": "🚀 节点选择" }
     ],
