@@ -2,8 +2,8 @@
  "dns": {
     "servers": [
       { "tag": "local", "type": "udp", "server": "10.0.0.4" },
-      { "tag": "public", "type": "https", "server": "10.0.0.4", "domain_resolver": "local" },
-      { "tag": "foreign", "type": "https", "server": "10.0.0.4",  "detour": "🚀 节点选择" }
+      { "tag": "public", "type": "https", "server": "dns.alidns.com", "domain_resolver": "local" },
+      { "tag": "foreign", "type": "https", "server": "1.1.1.1",  "detour": "🚀 节点选择" }
     ],
    "rules": [
       {"clash_mode": "direct", "server": "local"},
