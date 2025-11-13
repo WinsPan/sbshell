@@ -1,8 +1,8 @@
 {
  "dns": {
     "servers": [
-      { "tag": "local", "type": "udp", "server": "119.29.29.29" },
-      { "tag": "public", "type": "https", "server": "dns.alidns.com", "domain_resolver": "local" },
+      { "tag": "local", "type": "udp", "server": "10.0.0.4" },
+      { "tag": "public", "type": "https", "server": "10.0.0.4", "domain_resolver": "local" },
       { "tag": "foreign", "type": "https", "server": "1.1.1.1",  "detour": "🚀 节点选择" }
     ],
    "rules": [
@@ -12,7 +12,7 @@
       {"rule_set": "geosite-google", "server": "foreign"},
       {"rule_set": ["geosite-cn", "geosite-apple", "geosite-private"], "server": "local"}
     ],
-   "final": "foreign",
+   "final": "local",
    "strategy": "ipv4_only",
    "independent_cache": true
 },
@@ -99,7 +99,7 @@
     "final": "🕸️ 兜底策略",
     "auto_detect_interface": true,
     "default_mark": 666,
-    "default_domain_resolver": {"server": "public"}
+    "default_domain_resolver": {"server": "local"}
   },
     "log": {
     "disabled": false,
